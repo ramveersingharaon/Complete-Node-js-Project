@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register </title>
+    <link rel="stylesheet" href="./form.css">
+</head>
+<body>
+    {{>header}}
+    <h1 class="error">{{pass_not_matching}}</h1>
+<div class="container">
+    <form action="/register" class="form" method="post">
+            <h1> Register Now</h1>
+            <div class="input">
+                <label>Full Name:</label>
+                <input type="text" name="name" placeholder="Enter Your Full Name">
+            </div>
+            <div class="input">
+                <label>Email:</label>
+                <input type="email" name="email" placeholder="Enter Your Email">
+            </div>
+            <div class="input">
+                <label>Mobile:</label>
+                <input type="text" name="mobile" placeholder="Enter Your Mobile Number">
+            </div>
+            <div class="input">
+                <label>Password:</label>
+                <input type="password" name="password" placeholder="Enter Your Password">
+            </div>
+            <div class="input">
+                <label>Confirm Password:</label>
+                <input type="password" name="cpassword" placeholder="Enter Your Confirm Password">
+            </div>
+            <button id="btn"> Submit</button>
+    
+    </form>
+</div>
+   
+</body>
+</html>
